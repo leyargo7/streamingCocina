@@ -1,0 +1,141 @@
+/* header {
+    margin-top: 150px;
+} */
+#bodyFondo {
+    background-image: url('../img/fondoStreamV.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.team {
+    background:purple;
+}
+/* .caja_contai {
+    padding-top: 20px;
+    padding-bottom: 558px;
+} */
+.video_contai {
+    margin-top: 0px;
+}
+.container_chat {
+    margin-top: 30px;
+}
+
+/*  */
+
+#chat-container {
+    max-width: 600px;
+    /* margin: 30px auto; */
+    /* border: 1px solid #ddd; */
+    /* box-shadow: 1px 3px 5px rgba(0, 0, 0, .5); */
+    
+    
+}
+
+#chat-window {
+    padding:0;
+    /* margin: 0 20px; */
+    /* border-bottom: 1px solid #e9e9e9; */
+    color: #555;
+    
+    
+}
+
+#output p {
+    color: #aaa;
+    padding: 6px 0;
+    margin: 0;
+    
+}
+
+#actions p{
+    padding: 14px 0;
+    margin: 0 20px;
+    border-bottom: 1px solid #e9e9e9;
+    color:#555;
+}
+
+input {
+	    padding: 10px 20px;
+	    box-sizing: border-box;
+	    border: 0;
+	    background: #eee;
+	    display: block;
+	    width: 100%;
+}
+
+#send {
+    background: #575ed8;
+    color: #fff;
+    font-size: 18px;
+    border:0;
+    padding: 12px 0;
+    width: 100%;
+    border-radius: 0 0 2px 2px;
+}
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: auto;
+}
+.embed-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#cont {
+
+    overflow:auto; 
+    block-size:230px;
+}
+#infoUser{
+    display: none;
+}
+#pais{
+    display: none;
+}
+/* media queries */
+
+@media (min-width: 700px) {
+
+    .container_chat {
+        margin-top: 0px;
+    }
+    .caja_contai {
+        padding-top: 20px;
+        padding-bottom: 558px;
+    }
+
+  
+    
+    #cont {
+        overflow:auto; 
+        block-size:160px;
+    }
+
+    
+}
+
+@media (min-width: 1024px) {
+
+    #bodyFondo {
+        background-image: url('../img/fondoStreamH.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .caja_contai {
+        padding-top: 20px;
+        padding-bottom: 170px;
+    }
+    
+    #cont {
+        overflow:auto; 
+        block-size:280px;
+    }
+}
+    
