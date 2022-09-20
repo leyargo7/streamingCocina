@@ -1,5 +1,3 @@
-// require('events').EventEmitter.prototype._maxListeners = 100;
-
 const express = require('express');
 const path = require('path');
 const morgan = require('morgan');
@@ -13,12 +11,12 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 // importing routes
-const customerRoutes = require('./routes/customer');
+const customerRoutes = require('./src/routes/customer');
 
 // settings
 
 app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, '/src/views'));
 
 
 // middlewares
@@ -37,7 +35,7 @@ app.use(session({secret: 'leyGpxConnect07', resave: false, saveUninitialized: fa
 app.use('/', customerRoutes);
 
 // static files
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '/src/public')));
 
 //-------------------------
 
